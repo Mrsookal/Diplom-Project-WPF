@@ -1,0 +1,428 @@
+﻿<Window x:Class="TerminalWpf.Rate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TerminalWpf"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        
+        mc:Ignorable="d"
+        Title="Rate" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" WindowStartupLocation="CenterOwner">
+    <Grid>
+
+        <Grid.Background >
+            <ImageBrush ImageSource="bg_it_kletka.png" TileMode="Tile" Stretch="Uniform" AlignmentY="Top" Viewport="1000,1000,600,600" ViewportUnits="Absolute"/>
+
+        </Grid.Background>
+
+        <Border x:Name="backgron" Margin="10,132,1774,236" CornerRadius="30" Padding="10" Background="#FF9EB8C6" >
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="15" Color="White" ShadowDepth="15"></DropShadowEffect>
+            </Border.Effect>
+
+        </Border>
+
+        <Border x:Name="Plaska2"   Background="White" VerticalAlignment="Bottom" HorizontalAlignment="Center" Padding="10"   CornerRadius="20" Height="400" Width="1100" Margin="0 0 0 40">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="200" Color="White" ShadowDepth="10"  ></DropShadowEffect>
+            </Border.Effect>
+        </Border>
+
+        <Border x:Name="num0" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="435,648,1407,354">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"></DropShadowEffect>
+            </Border.Effect>
+            <Button x:Name="Butnum0" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="0" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butnum0_Click"/>
+        </Border>
+
+        <Border x:Name="num1" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="510,648,1332,354">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"></DropShadowEffect>
+            </Border.Effect>
+            <Button x:Name="Butnum1" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="1" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butnum1_Click" />
+        </Border>
+
+        <Border x:Name="num2" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="585,648,1257,354">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"></DropShadowEffect>
+            </Border.Effect>
+            <Button x:Name="Butnum2" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="2" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butnum2_Click" />
+        </Border>
+
+        <Border x:Name="tab" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="145" Margin="435,723,1332,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"></DropShadowEffect>
+            </Border.Effect>
+            <Button x:Name="Buttab" MaxHeight="60" MaxWidth="130" MinHeight="60" MinWidth="130 " Background="Transparent"  BorderBrush ="Transparent" Content="TAB" FontSize="20" Foreground="Black" FontFamily="Yu Gothic UI " Click="Buttab_Click" />
+        </Border>
+
+        <Border x:Name="num3" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="660,648,1182,354">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butnum3" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="3" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butnum3_Click" />
+        </Border>
+
+        <Border x:Name="num4" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="735,648,1107,354">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butnum4" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="4" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butnum4_Click" />
+        </Border>
+
+        <Border x:Name="num5" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="810,648,1032,354">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butnum5" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="5" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Butnum5_Click" />
+        </Border>
+
+        <Border x:Name="num6" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="885,648,957,354" RenderTransformOrigin="0.5,0.5">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butnum6" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="6" FontSize="25" Foreground="Black"  FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Butnum6_Click" />
+        </Border>
+
+        <Border x:Name="num7" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="960,648,882,354">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butnum7" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="7" FontSize="25" Foreground="Black"  FontFamily="Yu Gothic UI " Click="Butnum7_Click" />
+        </Border>
+
+        <Border x:Name="num8" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1035,648,807,354">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butnum8" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="8" FontSize="25" Foreground="Black"  FontFamily="Yu Gothic UI " Click="Butnum8_Click" />
+        </Border>
+
+        <Border x:Name="num9" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1110,648,732,354">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butnum9" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="9" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butnum9_Click"  />
+        </Border>
+
+        <Border x:Name="delete" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="145" Margin="1335,648,432,354">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butdelete" MaxHeight="60" MaxWidth="130" MinHeight="60" MinWidth="130 " Background="Transparent"  BorderBrush ="Transparent" Content="delete" FontSize="20" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butdelete_Click"  />
+        </Border>
+
+        <Border x:Name="btq" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="585,723,1257,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butq" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="й" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butq_Click" />
+        </Border>
+
+        <Border x:Name="btw" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="660,723,1182,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butw" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="ц" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Butw_Click" />
+        </Border>
+
+        <Border x:Name="bte" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="735,723,1107,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Bute" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="у" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Bute_Click" />
+        </Border>
+
+        <Border x:Name="btr" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="810,723,1032,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butr" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="к" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Butr_Click" />
+        </Border>
+
+        <Border x:Name="btt" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="885,723,957,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butt" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="е" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Butt_Click" />
+        </Border>
+
+        <Border x:Name="bty" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="960,723,882,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Buty" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="н" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Buty_Click" />
+        </Border>
+
+        <Border x:Name="btu" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1035,723,807,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butu" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="г" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Butu_Click" />
+        </Border>
+
+        <Border x:Name="bti" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1110,723,732,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Buti"  MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="ш" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Buti_Click" />
+        </Border>
+
+        <Border x:Name="bto" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1185,723,657,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Buto" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="щ" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Buto_Click" />
+        </Border>
+
+        <Border x:Name="btp" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1260,723,582,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butp" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="з" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Butp_Click" />
+        </Border>
+
+        <Border x:Name="numsinvol1" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1185,648,657,354">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butnumsinvol1" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="-" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butnumsinvol1_Click"  />
+        </Border>
+
+        <Border x:Name="numsimvol2" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1260,648,582,354">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butnumsinvol2" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="=" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butnumsinvol2_Click"  />
+        </Border>
+
+        <Border x:Name="btpsimvol1" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1335,723,507,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butpsimvol1" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="х" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Butpsimvol1_Click" />
+        </Border>
+
+        <Border x:Name="btsimvol2" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1410,723,432,279">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butpsimvol2" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="ъ" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " FontWeight="Bold" Click="Butpsimvol2_Click" />
+        </Border>
+
+        <Border x:Name="Btenter" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="114" Margin="1366,798,432,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butenter" MaxHeight="60" MaxWidth="100" MinHeight="60" MinWidth="100 " Background="Transparent"  BorderBrush ="Transparent" Content="ВВОД" FontSize="20" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butenter_Click"  />
+        </Border>
+
+        <Border x:Name="btswitchlng" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="101" Margin="435,798,1376,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butswtchlng" MaxHeight="60" MaxWidth="90" MinHeight="60" MinWidth="90 " Background="Transparent"  BorderBrush ="Transparent" Content="ANG" FontSize="15" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butswtchlng_Click" />
+        </Border>
+
+        <Border x:Name="bta" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="541,798,1301,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Buta" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="ф" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Buta_Click" />
+        </Border>
+
+        <Border x:Name="bts" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="616,798,1226,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Buts" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="ы" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Buts_Click" />
+        </Border>
+
+        <Border x:Name="btd" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="691,798,1151,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butd" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="в" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butd_Click" />
+        </Border>
+
+        <Border x:Name="btf" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="766,798,1076,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butf" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="а" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butf_Click" />
+        </Border>
+
+        <Border x:Name="btg" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="841,798,1001,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butg" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="п" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butg_Click" />
+        </Border>
+
+        <Border x:Name="bth" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="916,798,926,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Buth" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="р" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Buth_Click" />
+        </Border>
+
+        <Border x:Name="btj" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="991,798,851,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butj" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="о" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butj_Click" />
+        </Border>
+
+        <Border x:Name="btk" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1066,798,776,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butk" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="л" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butk_Click" />
+        </Border>
+
+        <Border x:Name="btl" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1141,798,701,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butl" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="д" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butl_Click" />
+        </Border>
+
+        <Border x:Name="btsimvol3" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1216,798,626,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butsimvol3" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="ж" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butsimvol3_Click" />
+        </Border>
+
+        <Border x:Name="btsimvol4" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1291,798,551,204">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Btsimvol4" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="э" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Btsimvol4_Click" />
+        </Border>
+
+        <Border x:Name="Lshift" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="110" Padding="0" Margin="470,873,1332,129">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butshift" MaxHeight="60" MaxWidth="150" MinHeight="60" MinWidth="130 " Background="Transparent"  BorderBrush ="Transparent"  Content="⇮ shift     " FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butshift_Click" />
+        </Border>
+
+        <Border x:Name="btz" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="585,873,1257,129">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butz" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="я" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butz_Click" />
+        </Border>
+
+        <Border x:Name="btx" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="660,873,1182,129">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butx" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="ч" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butx_Click" />
+        </Border>
+
+        <Border x:Name="btc" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="735,873,1107,129">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butc" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="с" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Margin="0,5" Click="Butc_Click" />
+        </Border>
+
+        <Border x:Name="btv" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="810,873,1032,129">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butv" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="м" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Margin="0,5" Click="Butv_Click" />
+        </Border>
+
+        <Border x:Name="btb" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="885,873,957,129">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butb" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="и" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Margin="0,5" Click="Butb_Click" />
+        </Border>
+
+        <Border x:Name="btn" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="960,873,882,129">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butn" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="т" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Margin="0,5" Click="Butn_Click" />
+        </Border>
+
+        <Border x:Name="btm" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1035,873,807,129">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butm" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="ь" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Margin="0,5" Click="Butm_Click" />
+        </Border>
+
+        <Border x:Name="btsimvol5" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1110,873,732,129">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butsimvol5" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="б" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Margin="0,5" Click="Butsimvol5_Click" />
+        </Border>
+
+        <Border x:Name="btsimvol6" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1185,873,657,129">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butsimvol6" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="ю" FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Margin="0,5" Click="Butsimvol6_Click" />
+        </Border>
+
+        <Border x:Name="btsimvol7" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1260,873,582,129">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butsimvol7" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="," FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Margin="0,5" Click="Butsimvol7_Click" />
+        </Border>
+
+        <Border x:Name="btsimvol8" Background="#FF9EB8C6" CornerRadius="15" Height="70" Width="70" Margin="1335,873,507,129">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butsimvol8" MaxHeight="60" MaxWidth="60" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="." FontSize="25" Foreground="Black" FontFamily="Yu Gothic UI " Margin="0,5" Click="Butsimvol8_Click" />
+        </Border>
+
+        <Border x:Name="spasebar" Background="#FF9EB8C6" CornerRadius="15" Width="745" Height="70" Margin="585,948,582,54">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" ShadowDepth="5"/>
+            </Border.Effect>
+            <Button x:Name="Butspase" MaxHeight="60" MaxWidth="740" MinHeight="60" MinWidth="60 " Background="Transparent"  BorderBrush ="Transparent" Content="space" FontSize="15" Foreground="Black" FontFamily="Yu Gothic UI " Click="Butspase_Click" />
+        </Border>
+
+        <Border x:Name="Textbox" MinHeight="140" MinWidth="1000" Background="White" Padding="20"  Margin="177,10,46,440" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="White" ShadowDepth="5"/>
+            </Border.Effect>
+
+            <StackPanel>
+
+                <TextBox x:Name="textbox1"  FontSize="40" FontFamily="Yu Gothic UI Light" CaretBrush="#FF9EB8C6" SelectionBrush="#FF9EB8C6" Background="White" Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:TextFieldAssist.UnderlineBrush="#FF272B3D" materialDesign:HintAssist.Hint="Ваше сообщение. . ."  materialDesign:HintAssist.Foreground="#FF9EB8C6" Height="508" AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" materialDesign:ScrollBarAssist.ThumbCornerRadius="10" IsReadOnly="True"  Focusable="False" Margin="0,0,454,0"   />
+                <Label>
+
+                </Label>
+                <Button x:Name="send" Background="#FF9EB8C6" HorizontalAlignment="Right" Content="Отправить" BorderBrush="Black" Foreground="#DD000000" FontFamily="Yu Gothic UI Semibold" FontSize="18" Width="276"  Height="62" FontWeight="Normal" Click="Button_Click" Margin="0,0,78,0" >
+
+
+                </Button>
+
+            </StackPanel>
+
+
+        </Border>
+        <TextBlock x:Name="desc"  TextAlignment="Center" Text="По этому QR коду вы можете узнать о правилах организаци."  FontSize="27" TextWrapping="Wrap" MaxHeight="508" MaxWidth="430"   Focusable="False"   FontFamily="Yu Gothic UI Light" Margin="1410,31,72,802" />
+        <TextBlock x:Name="desc2"  TextAlignment="Center" Text="После нажатия кнопки 'Отправить' вы соглашаетесь с правилами организации."  FontSize="15" TextWrapping="Wrap" MaxHeight="508" MaxWidth="430"   Focusable="False"   FontFamily="Yu Gothic UI Light" Margin="1410,493,72,536" Foreground="#FF9B9B9B" />
+        <Image x:Name="img1" Source="1.png" HorizontalAlignment="Left" Height="55" Margin="70,775,0,0" VerticalAlignment="Top" Width="68"/>
+        <Image x:Name="img2" Source="2.png" HorizontalAlignment="Left" Height="55" Margin="70,615,0,0" VerticalAlignment="Top" Width="68"/>
+        <Image x:Name="img3" Source="3.png" HorizontalAlignment="Left" Height="55" Margin="70,457,0,0" VerticalAlignment="Top" Width="68"/>
+        <Image x:Name="img4" Source="4.png" HorizontalAlignment="Left" Height="55" Margin="70,298,0,0" VerticalAlignment="Top" Width="68"/>
+        <Image x:Name="img5" Source="5.png" HorizontalAlignment="Left" Height="60" Margin="68,137,0,0" VerticalAlignment="Top" Width="56"/>
+        <Image x:Name="qrcode"  HorizontalAlignment="Left" Height="364" Margin="1451,104,0,0" VerticalAlignment="Top" Width="389" Source="qr-code.png"></Image>
+
+        <Slider x:Name="Slider" Margin="29,156,1813,257" Foreground="Yellow" Orientation="Vertical" Maximum="5" Minimum="1" SmallChange="1" ValueChanged="Slider_ValueChanged" AutomationProperties.Name="Slider" Value="-1" IsSnapToTickEnabled="True" AutoToolTipPlacement="TopLeft" Cursor="Hand" TickPlacement="BottomRight" Width="70"/>
+        <Button x:Name="buttback" Content="Назад" Height="80" Width="350" Margin="29,948,1533,44" FontSize="25"  Background="#FF9EB8C6" Foreground="Black" FontFamily="Yu Gothic UI" BorderBrush="Black" Click="buttback_Click" />
+
+    </Grid>
+</Window>

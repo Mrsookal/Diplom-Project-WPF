@@ -1,0 +1,38 @@
+﻿<Window x:Class="TerminalWpf.Final"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TerminalWpf"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="StartWindow" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" WindowStartupLocation="CenterOwner" Loaded="Window_Loaded">
+
+    <Grid x:Name="Mainroot">
+
+        <Grid.Background >
+            <ImageBrush ImageSource="bg_it_kletka.png" TileMode="Tile" Stretch="Uniform" AlignmentY="Top" Viewport="1000,1000,600,600" ViewportUnits="Absolute"/>
+
+        </Grid.Background>
+
+        <Image  Source="Logos.png"  Height="506"  Width="528" Margin="692,30,692,536">
+            <Image.Effect>
+                <DropShadowEffect BlurRadius="100" Color="White" ShadowDepth="5"></DropShadowEffect>
+            </Image.Effect>
+        </Image>
+
+        <Border x:Name="Textbox" MinHeight="140" MinWidth="1000" Background="White" Padding="20"  Margin="456,590,456,242" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="White" ShadowDepth="5"/>
+            </Border.Effect>
+            <StackPanel>
+                <Label Content="Спасибо за ваше мнение!" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center" FontSize="60" FontFamily="Yu Gothic UI" > </Label>
+                <Label Background="Transparent" FontSize="30" Content=" " ></Label>
+                <Button x:Name="button1" Background="#FF9EB8C6" Content="Отменить отправку" BorderBrush="Black" Foreground="#DD000000" FontFamily="Yu Gothic UI Semibold" FontSize="25" Width="400"  Height="60" FontWeight="Normal" Click="Button_Click" Margin="280,0" />
+            </StackPanel>
+
+        </Border>
+    </Grid>
+
+
+</Window>
